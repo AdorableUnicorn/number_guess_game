@@ -130,32 +130,35 @@ ALTER TABLE ONLY public.player ALTER COLUMN player_id SET DEFAULT nextval('publi
 -- Data for Name: games; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.games VALUES (114, 755, 38);
+INSERT INTO public.games VALUES (115, 156, 38);
+INSERT INTO public.games VALUES (116, 734, 39);
+INSERT INTO public.games VALUES (117, 509, 39);
+INSERT INTO public.games VALUES (118, 908, 38);
+INSERT INTO public.games VALUES (119, 867, 38);
+INSERT INTO public.games VALUES (120, 735, 38);
 
 
 --
 -- Data for Name: player; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.player VALUES (1, 'maciej');
-INSERT INTO public.player VALUES (2, 'Kot');
-INSERT INTO public.player VALUES (3, 'kot');
-INSERT INTO public.player VALUES (4, 'Some');
-INSERT INTO public.player VALUES (5, 'user_1743370449792');
-INSERT INTO public.player VALUES (6, 'user_1743370449791');
+INSERT INTO public.player VALUES (38, 'user_1743437715866');
+INSERT INTO public.player VALUES (39, 'user_1743437715865');
 
 
 --
 -- Name: games_game_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.games_game_id_seq', 1, false);
+SELECT pg_catalog.setval('public.games_game_id_seq', 120, true);
 
 
 --
 -- Name: player_player_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.player_player_id_seq', 6, true);
+SELECT pg_catalog.setval('public.player_player_id_seq', 39, true);
 
 
 --
